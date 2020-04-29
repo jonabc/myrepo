@@ -22,6 +22,7 @@ jobs:
       with:
         name: my-artifact
         path: path/to/artifact/world.txt
+    - run: rm -rf path
     - uses: actions/download-artifact@v2
       with:
         name: my-artifact
